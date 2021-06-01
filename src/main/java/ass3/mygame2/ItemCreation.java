@@ -19,7 +19,7 @@ public class ItemCreation {
 
     public void createItems() {
 
-        Item item1, item2, excaliburSword, key, frontGateKey, flower, pillow;
+        Item excaliburSword, key, frontGateKey, flower, pillow;
 
         excaliburSword = new Item("excaliburSword", "The legendary Excalibur", 100);
         key = new Item("key", "It has a shape of a heart", 100);
