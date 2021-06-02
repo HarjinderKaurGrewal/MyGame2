@@ -5,16 +5,15 @@
  */
 package ass3.mygame2;
 
-
 import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
  *
+ * @author harjinder and harshil
+ * @version 02 June, 2021
  *
- 
  */
-
 public class Game {
 
     private Parser parser;
@@ -40,12 +39,11 @@ public class Game {
         currentRoom = rooms.getRoom("castle");  // start game outside
         //System.out.println(createRoom.getcurrentRoom().getName());
     }
-    
+
     public Room getCurrentRoom() {
         return currentRoom;
     }
 
-    
     /**
      * Main play routine. Loops until end of play.
      */
@@ -112,7 +110,6 @@ public class Game {
         return wantToQuit;
     }
 
-    
     /**
      * Print out some help information. Here we print some stupid, cryptic
      * message and a list of the command words.
@@ -165,6 +162,13 @@ public class Game {
         }
     }
 
+    /**
+     * Check whether the item is present in the room and take the item Once the
+     * item is taken the item is removed from the current room
+     *
+     * @param command
+     *
+     */
     private void takeItem(Command command) {
         if (!command.hasSecondWord()) {
             // if there is no second word, we don't know where to go...
@@ -262,4 +266,3 @@ public class Game {
     }
 
 }
-

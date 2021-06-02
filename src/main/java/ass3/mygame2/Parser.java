@@ -1,6 +1,3 @@
-package ass3.mygame2;
-
-import java.util.Scanner;
 
 /**
  * This class is part of the "World of Zuul" application. 
@@ -14,9 +11,13 @@ import java.util.Scanner;
  * The parser has a set of known command words. It checks user input against
  * the known commands, and if the input is not one of the known commands, it
  * returns a command object that is marked as an unknown command.
- * 
- * @author  Michael Kölling and David J. Barnes
- * @version 2016.02.29
+*/
+package ass3.mygame2;
+
+import java.util.Scanner;
+/** 
+ * author harjinder and harshil
+ * @version 02 June, 2021
  */
 public class Parser 
 {

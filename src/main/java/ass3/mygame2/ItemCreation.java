@@ -1,12 +1,21 @@
+/**
+ * This class is part of the "World of Zuul" application.
+ * "World of Zuul" is a very simple, text based adventure game.
+ *
+ */
 package ass3.mygame2;
 
 import java.util.ArrayList;
 
 /**
- * Write a description of class ItemCreation here.
+ * This class creates the items which are supposed to kept in the room and
+ * picked up by the player in order to win the game
  *
- * @author (your name)
- * @version (a version number or a date)
+ * The items are created and then all those items are made available to play in
+ * the game
+ *
+ * @author harjinder and harshil
+ * @version 02 June, 2021
  */
 public class ItemCreation {
 
@@ -26,7 +35,7 @@ public class ItemCreation {
         frontGateKey = new Item("frontGateKey", "To open the front gate door", 100);
         flower = new Item("flower", "Flowers for your beloved", 100);
         pillow = new Item("pillow", "pillows available for sleeping", 100);
-       
+
         allItemsInGame.add(excaliburSword);
         allItemsInGame.add(key);
         allItemsInGame.add(frontGateKey);
@@ -34,6 +43,13 @@ public class ItemCreation {
         allItemsInGame.add(pillow);
     }
 
+    /**
+     * Checks whether the item is present and then returns the name of the item
+     * to the player
+     *
+     * @param stringItem
+     * @return itemToReturn returns the name of the item currently in room.s
+     */
     public Item getItem(String stringItem) {
         Item itemToReturn = null;
         for (Item item : allItemsInGame) {

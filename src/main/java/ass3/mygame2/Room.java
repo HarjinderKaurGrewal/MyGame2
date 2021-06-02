@@ -5,10 +5,9 @@ import java.util.HashMap;
 import java.util.ArrayList;
 
 /**
- * Write at least 3 sentences!!!!!
  * 
- * @author  Michael Kölling and David J. Barnes
- * @version 2016.02.29
+ * @author harjinder and harshil
+ * @version 02 June, 2021
  */
 
 public class Room 
@@ -25,6 +24,8 @@ public class Room
      * no exits. "description" is something like "a kitchen" or
      * "an open court yard".
      * @param description The room's description.
+     * @param name The name of a Room
+     * @param isLocked is a boolean param for navigating the door is locked or not locked
      */
     public Room(String name, String description, boolean isLocked) 
     {
@@ -70,7 +71,11 @@ public class Room
         return "You have some " + listOfItems();
 
     }
-
+    
+    /**
+     * 
+     * @return returns the list of items
+     */
     private String listOfItems(){
 
         String returnString = "items:";
