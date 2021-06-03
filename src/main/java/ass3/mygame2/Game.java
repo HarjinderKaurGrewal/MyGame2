@@ -28,7 +28,7 @@ public class Game {
     private int timeCounter; // to count the steps
 
     /**
-     * Create the game and initialise its internal map.
+     * Create the game and initialize its internal map.
      */
     public Game() {
         long timeStart = System.currentTimeMillis(); // use the real time
@@ -67,10 +67,11 @@ public class Game {
      */
     private void printWelcome() {
         System.out.println();
-        System.out.println("some background here");
-        System.out.println("objective here");
-        System.out.println("include some necessary information (e.g. time limit)");
-        System.out.println();
+        System.out.println("You are in the castle where the doors are locked. You need to find keys inorder to unlock the doors and move to next room");
+        System.out.println("There are 5 rooms in which there are different items.");
+        System.out.println("You need to collect all the items to win the game.");
+        System.out.println("You have only 50 moves to win the game.");
+        System.out.println("Commands allowed in the game are: go, quit, help, take, drop, use, inventory, inspect");
         System.out.println(currentRoom.getLongDescription());
     }
 
