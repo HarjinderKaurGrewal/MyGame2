@@ -14,13 +14,15 @@ package ass3.mygame2;
 import java.util.ArrayList;
 
 /**
+ * This class creates the room in the game There are 5 rooms which makes the
+ * game complex where all the room has exit gates This class creates an Array
+ * list of rooms which are added in the game. This class also creates object of
+ * ItemCreation class
+ *
+ * The items are placed in the room in this class.
  *
  * @author harjinder and harshil
  * @version 02 June, 2021
- *
- * This class creates an Array list of rooms which are added in the game. This
- * class also creates object of ItemCreation class
- *
  *
  */
 public class RoomCreation {
@@ -84,10 +86,9 @@ public class RoomCreation {
      *
      * @param stringRoom
      * @return return the current position of the player (in which room the
-     * player is currently located)
-     * Checks the room is present or not
-     * This method calls the current room name along with the items in the room
-     * where the player is located
+     * player is currently located) Checks the room is present or not This
+     * method calls the current room name along with the items in the room where
+     * the player is located
      */
     public Room getRoom(String stringRoom) {
         Room roomToReturn = null;

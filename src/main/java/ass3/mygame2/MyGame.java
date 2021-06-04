@@ -4,7 +4,7 @@ package ass3.mygame2;
 
 /**
  *
- * author harjinder and harshil
+ * @author harjinder and harshil
  * @version 02 June, 2021
  * 
  */

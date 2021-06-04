@@ -16,7 +16,7 @@ package ass3.mygame2;
 
 import java.util.Scanner;
 /** 
- * author harjinder and harshil
+ * @author harjinder and harshil
  * @version 02 June, 2021
  */
 public class Parser 
